@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace test_Expression_web
 {
@@ -25,6 +27,39 @@ namespace test_Expression_web
             time.Text = Session["Time"].ToString();
             doctor.Text= Session["doctor"].ToString();
            count.Text= Session["cou"].ToString();
+
+        }
+        protected void Unnamed9_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
+                conn.Open();
+
+                String insertQ = "insert into DocSedule(Specification,DoctorName,Date,Time,Hospital) values (@spe,@d_name,@date,@time,@hos)";
+
+                SqlCommand com = new SqlCommand(insertQ, conn);
+
+                
+                com.Parameters.AddWithValue("@spe", age.Text);
+                com.Parameters.AddWithValue("@d_name", gen.SelectedItem.ToString());
+                com.Parameters.AddWithValue("@date", tp.Text);
+                com.Parameters.AddWithValue("@time", email.Text);
+                com.Parameters.AddWithValue("@hos", password.Text);
+                
+                com.ExecuteNonQuery();
+
+                conn.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex.ToString());
+
+            }
+
+            Response.Redirect("Appointment.aspx");
 
         }
     }
