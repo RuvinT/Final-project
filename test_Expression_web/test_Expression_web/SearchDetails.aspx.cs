@@ -13,8 +13,14 @@ namespace test_Expression_web
 {
     public partial class SearchDetails : System.Web.UI.Page
     {
+        int max;
         protected void Page_Load(object sender, EventArgs e)
+        
         {
+           
+
+
+
             Label2.Text = Request.QueryString["Doc"].ToString();
 
            Label1.Text = Request.QueryString["Hos"].ToString();

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace test_Expression_web
 {
@@ -12,13 +14,38 @@ namespace test_Expression_web
         String rad;
         protected void Page_Load(object sender, EventArgs e)
         {
-            doctor.Text = Request.QueryString["Doc"].ToString();
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
+            conn.Open();
 
-            hospital.Text = Request.QueryString["Hos"].ToString();
-            date.Text = Request.QueryString["Date"].ToString();
-            time.Text = Request.QueryString["Time"].ToString();
-            time1.Text = Request.QueryString["Time"].ToString();
-            number.Text = Request.QueryString["cou"].ToString();
+
+
+            String insertQ2 = "select MaxPacients from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
+
+
+            SqlCommand com2 = new SqlCommand(insertQ2, conn);
+            int max = int.Parse(com2.ExecuteScalar().ToString());
+
+
+
+            conn.Close();
+            int count= int.Parse(Request.QueryString["cou"].ToString());
+
+            if (max <= count) { Response.Write("<script>alert('Sorry number of pacients are full');</script>"); }
+            else
+            {
+
+
+
+
+
+                doctor.Text = Request.QueryString["Doc"].ToString();
+
+                hospital.Text = Request.QueryString["Hos"].ToString();
+                date.Text = Request.QueryString["Date"].ToString();
+                time.Text = Request.QueryString["Time"].ToString();
+                time1.Text = Request.QueryString["Time"].ToString();
+                number.Text = Request.QueryString["cou"].ToString();
+            }
 
         }
 

@@ -38,10 +38,13 @@ namespace test_Expression_web
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
                 conn.Open();
 
-                String insertQ = "insert into DocSedule(DoctorID,Specification,DoctorName,Date,Time,Hospital) values (@did,@spe,@d_name,@date,@time,@hos)";
-                String insertQ1 = "select DoctorID from DocSedule";
+                String insertQ = "insert into DocSedule(DoctorID,Specification,DoctorName,Date,Time,Hospital,MaxPacients) values (@did,@spe,@d_name,@date,@time,@hos,@mp)";
+                String insertQ1 = "select DoctorID from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
+                String insertQ2 = "select MaxPacients from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
                 SqlCommand com = new SqlCommand(insertQ, conn);
                 SqlCommand com1 = new SqlCommand(insertQ1, conn);
+                SqlCommand com2 = new SqlCommand(insertQ2, conn);
+                com.Parameters.AddWithValue("@mp", com2.ExecuteScalar().ToString());
                 com.Parameters.AddWithValue("@did", com1.ExecuteScalar().ToString());
                 com.Parameters.AddWithValue("@spe", Session["spe"].ToString());
                 com.Parameters.AddWithValue("@d_name", Session["doctor"].ToString());
