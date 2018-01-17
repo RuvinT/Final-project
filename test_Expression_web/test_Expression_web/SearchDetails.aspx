@@ -147,7 +147,7 @@
 
 										</ul>
 									</div>
-									<div class="session-counter ui-action" data-toggle="tooltip" data-placement="left" title="" data-original-title="Next Number"><%#Eval("CountOf") %></div>
+									<div class="session-counter ui-action" data-toggle="tooltip" data-placement="left" title="" data-original-title="Next Number"><%#Eval("PacientNumber") %></div>
 																	</div>
 
 								<div class="ui-component-options">
@@ -157,7 +157,7 @@
                                              <asp:hyperlink
                               runat="server"
 id="hlDividents"
-navigateurl='<%# String.Format("BookP1.aspx?Hos={0}&Doc={1}&Date={2}&Time={3}&cou={4}&spe={5}", Eval("Hospital"), Eval("DoctorName"),Eval("Date"),Eval("Time"),Eval("CountOf"),Eval("Specification")) %>'
+navigateurl='<%# String.Format("BookP1.aspx?Hos={0}&Doc={1}&Date={2}&Time={3}&cou={4}&spe={5}", Eval("Hospital"), Eval("DoctorName"),Eval("Date"),Eval("Time"),Eval("PacientNumber"),Eval("Specification")) %>'
 text='Channel'>
 </asp:hyperlink>
 										</li>
