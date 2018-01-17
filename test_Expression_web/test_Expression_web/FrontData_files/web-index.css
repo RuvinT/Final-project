@@ -1,0 +1,51 @@
+#first-link 
+{
+	width: 21.5%;
+	display: block;
+	max-height: 10px;
+}
+
+@media (max-width: 420px)
+{
+	#first-link
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 473px)
+{
+	.hero-bg.add-padding--top
+	{
+		padding-top: 145px;
+	}
+}
+
+.bottom-slider__content h3
+{
+	font-size: 29px;
+}
+
+.bottom-slider__content h2
+{
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 22px;
+}
+
+@media (max-width: 708px)
+{
+	.bottom-slider__content h3
+	{
+		margin: 10px 0 5px 0;
+		font-size: 19px;
+	}
+
+	.bottom-slider__content h2
+	{
+		margin: 5px 0 12px 0;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 15px;
+	}
+}

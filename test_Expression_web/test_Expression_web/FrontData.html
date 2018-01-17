@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)https://www.doc.lk/ -->
+<html lang="en" class="velocity "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		 
+<title>Health Pack</title>
+		<!-- /title -->
+
+		<!-- styles -->
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/ubuntu.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/font-awesome.min.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/bootstrap.min.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/default.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/default.date.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/default.time.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/style.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/bootstrap-chosen.css">
+
+		<!--		NEW UI-->
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/style-new.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./FrontData_files/web-index.css">
+
+<style>
+     h1{color:red;}
+	.add-padding--top
+	{
+		margin-top: -95px;
+	}
+	@media (max-width: 473px)
+	{
+		.add-padding--top
+		{
+			margin-top: -122px;
+		}
+	}
+</style>
+		
+	</head>
+	<body>
+
+
+<!-- End Google Analytics -->
+
+		<!-- Start - Page Content -->
+		<header class="main">
+			<div class="container header__container">
+				<div class="row header__row">
+					<div class="col-md-2 col-sm-4 mobile-col-auto left-col">
+						<h1 >
+							HEALTH PACK
+						</h1>
+					</div>
+					<div class="col-md-10 col-sm-8 mobile-col-auto right-col">
+						<div class="header__links">
+														<div class="buttons">								
+								
+								<a href="http://healthvault.doc.lk/Account/extLogin?ReturnUrl=https://www.doc.lk/login" class="button-primary button-primary-outline">Login</a>
+								<a href="http://healthvault.doc.lk/Account/register?referrer=DH" class="button-primary">Sign Up</a>								
+							</div>
+													</div>
+					</div>
+				</div>
+							</div>
+		</header>
+		
+		<div class="add-padding--top"></div>	
+		
+		<div id="system-messages">
+
+		
+	
+		
+		
+	
+	
+	
+	
+</div>		<section class="hero hero-bg add-padding--top">
+	<div class="make-appointment">
+		<h2 class="index-title">Channel Your Doctor</h2>
+		<div class="container-appointment">
+			<form method="GET" action="https://www.doc.lk/search" accept-charset="UTF-8" role="form" id="index-search">
+			<span class="twitter-typeahead" style="position: relative;display: block">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+					<input id="doctor-input" class="form-control" placeholder="Doctor - Max 20 Characters" maxlength="20" autocomplete="off" name="doctor" type="text" value="">
+					<a id="doctor-popover" href="https://www.doc.lk/#/" class="input-group-addon ui-action-popover" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="left" data-title="Example &lt;a  class=&#39;pull-right&#39; id=&#39;doctor-popover-close&#39; href=&#39;#/&#39;&gt;&lt;span&gt;&lt;i class=&#39;fa fa-close&#39;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;" data-content="&lt;small&gt;Type &lt;strong&gt;Karuna&lt;/strong&gt; &lt;br&gt;Search results will contain sessions &lt;br&gt; for the following doctors: &lt;br&gt;Dr &lt;strong&gt;KARUNA&lt;/strong&gt;SENA JAYALATH &lt;br&gt;Dr A.B. &lt;strong&gt;KARUNA&lt;/strong&gt;RATNE &lt;br&gt;Dr D.M. RAJA&lt;strong&gt;KARUNA&lt;/strong&gt;&lt;/small&gt;" tabindex="-1" data-original-title="" title=""><i class="fa fa-question-circle"></i></a>
+				</div>
+				<div id="doctor-search-panel" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+					<div class="tt-dataset tt-dataset-states" id="doctor-search-result"></div>
+				</div>
+			</span>
+
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-h-square"></i></span>
+				<select data-placeholder="Search Hospital" name="hospital" class="chosen-select form-control" id="hospital-input" style="display: none;">
+					<option value=""></option>
+															<option value="0" data-area="0" selected="selected">Any Hospital</option>
+																				<option value="13" data-area="13">Arogya Hospital</option>
+																				<option value="3" data-area="3">Asiri Central Hospital - Norris Canal Road-Colombo 10</option>
+																				<option value="2" data-area="2">Asiri Medical Hospital - Kirula Road - Colombo 05</option>
+																				<option value="1" data-area="1">Asiri Surgical Hospital - Kirimandala Mw - Colombo 05</option>
+																				<option value="27" data-area="27">Balasooriya Hospital Kalpitiya Branch</option>
+																				<option value="26" data-area="26">Balasooriya Hospital Puttalam</option>
+																				<option value="15" data-area="15">Blue Cross Medical Centre (Pvt) Ltd</option>
+																				<option value="51" data-area="51">Browns Hospitals - Ragama</option>
+																				<option value="37" data-area="37">CDEM Hospital</option>
+																				<option value="45" data-area="45">Ceylinco Healthcare </option>
+																				<option value="40" data-area="40">Ceymed Healthcare Services (Pvt) Ltd</option>
+																				<option value="56" data-area="56">Ceymed Hospital Services (Pvt) Ltd,Trincomalee</option>
+																				<option value="21" data-area="21">Child Eye - Rajagiriya</option>
+																				<option value="61" data-area="61">Christell Skin Clinic</option>
+																				<option value="28" data-area="28">Dr. Neville Fernando Teaching Hospital - Malabe</option>
+																				<option value="46" data-area="46">Durdans Hospital</option>
+																				<option value="12" data-area="12">Durdans Hospital - Heart Centre</option>
+																				<option value="38" data-area="38">Golden Key Hospitals Ltd</option>
+																				<option value="43" data-area="43">Healthy Life Clinic</option>
+																				<option value="41" data-area="41">Joseph Frazer Memorial Hospital</option>
+																				<option value="20" data-area="20">Kandy Private Hospital</option>
+																				<option value="22" data-area="22">Leesons Hospital </option>
+																				<option value="49" data-area="49">Lush Skin Clinique - Battaramulla</option>
+																				<option value="50" data-area="50">Lush Skin Clinique - Narahenpita Colombo 5</option>
+																				<option value="42" data-area="42">Medi Clinic (Pvt) Ltd - Wellawatte</option>
+																				<option value="63" data-area="63">MediHelp Hospital - Bandaragama</option>
+																				<option value="64" data-area="64">MediHelp Hospital - Beruwala</option>
+																				<option value="65" data-area="65">MediHelp Hospital - Horana</option>
+																				<option value="66" data-area="66">MediHelp Hospital - Mathugama</option>
+																				<option value="67" data-area="67">MediHelp Hospital - Piliyandala</option>
+																				<option value="68" data-area="68">Mediline Health Care-Sri Jayawardanapura</option>
+																				<option value="58" data-area="58">Metro Medi care-Pitakotte</option>
+																				<option value="52" data-area="52">Miracle Health Hospital Kurunegala</option>
+																				<option value="16" data-area="16">Nawaloka Hospital - Negombo</option>
+																				<option value="70" data-area="70">Nawaloka Hospital-Colombo</option>
+																				<option value="29" data-area="29">NAWINNA MEDICARE HOSPITAL - MAHARAGAMA</option>
+																				<option value="47" data-area="47">Nawinne Hospital - Kurunagala</option>
+																				<option value="62" data-area="62">New MediHelp Hospital - Horana</option>
+																				<option value="10" data-area="10">New Philip Hospitals -Kalutara</option>
+																				<option value="11" data-area="11">Ninewells Care Mother and Baby Hospital-Colombo 05</option>
+																				<option value="44" data-area="44">Panadura Medical Services (Pvt) Ltd</option>
+																				<option value="19" data-area="19">Pannipitiya Private Hospital</option>
+																				<option value="32" data-area="32">Park Hospitals (Pvt) Ltd</option>
+																				<option value="18" data-area="18">Peoples Hospital Mahabage</option>
+																				<option value="69" data-area="69">Physio Medicare-Dehiwala</option>
+																				<option value="24" data-area="24">Ratmalana Audiology Centre</option>
+																				<option value="14" data-area="14">Royal Hospital (Pvt) Ltd - Colombo</option>
+																				<option value="33" data-area="33">Santa Dora Hospital</option>
+																				<option value="4" data-area="4">Singhe Hospital</option>
+																				<option value="34" data-area="34">Specialist Dermatology(Skin) Clinic-Thalawathugoda</option>
+																				<option value="48" data-area="48">Sulaiman's Hospital</option>
+																				<option value="25" data-area="25">Suwa Asiri Medicare Moratuwa</option>
+																				<option value="54" data-area="54">Suwanetha Eye Hospital-Gothatuwa</option>
+																				<option value="23" data-area="23">Suwasevana Hospital - Kandy</option>
+																				<option value="53" data-area="53">Suwashanthi Hospital-Anuradhapura</option>
+																				<option value="60" data-area="60">UniHealth-Bambalapitiya</option>
+																				<option value="7" data-area="7">Union Hospital</option>
+																				<option value="30" data-area="30">Vasan Eye Care Hospital</option>
+																				<option value="57" data-area="57">Vasana Hospital</option>
+																				<option value="39" data-area="39">Vindana Reproductive Health Center</option>
+																				<option value="71" data-area="71">Vision Care Eye Clinic - Mount Lavinia</option>
+																				<option value="36" data-area="36">Western Hospital</option>
+																				<option value="55" data-area="55">Winlanka Hospital Pvt. Ltd</option>
+																				<option value="31" data-area="31">Winsetha Hospital</option>
+																				<option value="59" data-area="59">X-LABS Medical and Channel Services-Negombo</option>
+	           </select><div class="chosen-container chosen-container-single" style="width: 315px;" title="" id="hospital_input_chosen"><a class="chosen-single"><span>Any Hospital</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+			</div>
+
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-plus-square"></i></span>
+				<select data-placeholder="Search Specialization" name="specialization" class="chosen-select form-control" id="specialization-input" style="display: none;">
+					<option value=""></option>
+															<option value="0" data-area="0" selected="selected">Any Specialization</option>
+																				<option value="195" data-area="195">Acupuncture</option>
+																				<option value="48" data-area="48">Allergy And Immunology</option>
+																				<option value="49" data-area="49">Allergy Specialist </option>
+																				<option value="241" data-area="241">Anaesthetist and Intensivist</option>
+																				<option value="190" data-area="190">Andrology And Male Fertility</option>
+																				<option value="187" data-area="187">Applied Psychologist</option>
+																				<option value="139" data-area="139">Audiologist</option>
+																				<option value="193" data-area="193">Ayurvedic And Alternative Medicine</option>
+																				<option value="116" data-area="116">Back Pain Treatment </option>
+																				<option value="45" data-area="45">Bacteriologist</option>
+																				<option value="145" data-area="145">Behaviour Therapist</option>
+																				<option value="115" data-area="115">Breast Feeding</option>
+																				<option value="7" data-area="7">Cardiac Electrophysiologist</option>
+																				<option value="4" data-area="4">Cardiologist </option>
+																				<option value="230" data-area="230">Cardiologist And Cardiac Electrophysiologist</option>
+																				<option value="239" data-area="239">Cardiologist Echo</option>
+																				<option value="8" data-area="8">Cardiothoracic Surgeon</option>
+																				<option value="242" data-area="242">Chemical Pathology</option>
+																				<option value="5" data-area="5">Chest Physician</option>
+																				<option value="6" data-area="6">Chest Specialist</option>
+																				<option value="158" data-area="158">Child and Adolescent Psychiatric</option>
+																				<option value="37" data-area="37">Child Psychiatrist</option>
+																				<option value="143" data-area="143">Child Psychologist</option>
+																				<option value="238" data-area="238">Chiropractor</option>
+																				<option value="128" data-area="128">Clinical  Geneticist</option>
+																				<option value="226" data-area="226">Clinical Audiologist</option>
+																				<option value="165" data-area="165">Clinical Embryologist</option>
+																				<option value="104" data-area="104">Clinical Health Psychologist</option>
+																				<option value="50" data-area="50">Clinical Hypnotist</option>
+																				<option value="216" data-area="216">Clinical Microbiologist</option>
+																				<option value="240" data-area="240">Clinical Neurologist</option>
+																				<option value="185" data-area="185">Clinical Neurophysiologist</option>
+																				<option value="118" data-area="118">Co-Ordinating Dr (Sleep Medicine)</option>
+																				<option value="51" data-area="51">Consultant Dental Surgeon</option>
+																				<option value="64" data-area="64">Consultant In Fertility</option>
+																				<option value="166" data-area="166">Consultant In Reproductive Medicine</option>
+																				<option value="52" data-area="52">Consultant Judicial Medicine</option>
+																				<option value="202" data-area="202">Cosmetic Care Clinic And Cosmetic</option>
+																				<option value="221" data-area="221">Cosmetic Care Clinic And Cosmetic Physician</option>
+																				<option value="206" data-area="206">Cosmetic Dermatology</option>
+																				<option value="207" data-area="207">Cosmetic Oculoplasty</option>
+																				<option value="188" data-area="188">Cosmetologist</option>
+																				<option value="53" data-area="53">Counseling Psychologist</option>
+																				<option value="54" data-area="54">Counselling</option>
+																				<option value="203" data-area="203">Dental And Maxillo -Facial Surgeon</option>
+																				<option value="46" data-area="46">Dental Surgeon</option>
+																				<option value="112" data-area="112">Dental Surgeon (Preventive Dentistry)</option>
+																				<option value="208" data-area="208">Dental Surgeon / General And Laser</option>
+																				<option value="40" data-area="40">Dermatologist</option>
+																				<option value="191" data-area="191">Diabetic Specialist</option>
+																				<option value="122" data-area="122">Diabetologist</option>
+																				<option value="36" data-area="36">Dietician</option>
+																				<option value="155" data-area="155">ECHO Scan</option>
+																				<option value="57" data-area="57">Embryologist</option>
+																				<option value="58" data-area="58">Endocrinologist</option>
+																				<option value="9" data-area="9">ENT Surgeon</option>
+																				<option value="10" data-area="10">Eye Surgeon</option>
+																				<option value="59" data-area="59">Family And General Counsellor</option>
+																				<option value="35" data-area="35">Family Physician</option>
+																				<option value="205" data-area="205">Family Planning /Reproductive And Female Sexual Health</option>
+																				<option value="164" data-area="164">Fertility Counselor</option>
+																				<option value="176" data-area="176">Fertility Physician</option>
+																				<option value="34" data-area="34">Gastroenterological Surgeon</option>
+																				<option value="127" data-area="127">Gastroenterologist</option>
+																				<option value="60" data-area="60">Gastrointestinal Surgeon</option>
+																				<option value="61" data-area="61">General</option>
+																				<option value="161" data-area="161">Genetic Counselor</option>
+																				<option value="62" data-area="62">Geneticist</option>
+																				<option value="63" data-area="63">Genito Urinary Surgeon</option>
+																				<option value="237" data-area="237">Geriatric Physician</option>
+																				<option value="215" data-area="215">Geriatrician/ Elderly Care Specialist</option>
+																				<option value="170" data-area="170">Gynaecological Cancer Surgeon</option>
+																				<option value="224" data-area="224">Gynaecological Oncologist</option>
+																				<option value="219" data-area="219">Gynaecological Oncosurgeon</option>
+																				<option value="11" data-area="11">Gynaecologist</option>
+																				<option value="152" data-area="152">Gynaecologist (VOG)</option>
+																				<option value="211" data-area="211">Gynecologist and Consultant in Fertility</option>
+																				<option value="65" data-area="65">Haematologist</option>
+																				<option value="120" data-area="120">Hair Clinic</option>
+																				<option value="125" data-area="125">Health Management</option>
+																				<option value="39" data-area="39">Hepatobiliary Surgeon</option>
+																				<option value="136" data-area="136">Hepatologist </option>
+																				<option value="214" data-area="214">Homeopathy</option>
+																				<option value="223" data-area="223">Human Nutritionist</option>
+																				<option value="67" data-area="67">Immunologist</option>
+																				<option value="148" data-area="148">Internal Medicine</option>
+																				<option value="131" data-area="131">Interventional Radiologist</option>
+																				<option value="196" data-area="196">Kidney Dialysis</option>
+																				<option value="68" data-area="68">Kidney Transplant Surgeon </option>
+																				<option value="171" data-area="171">Laparoscopic and Bariatric Surgeon</option>
+																				<option value="186" data-area="186">Laparoscopy And Colorectal Surgeon</option>
+																				<option value="189" data-area="189">Lifestyle Therapist</option>
+																				<option value="236" data-area="236">Liver Centre</option>
+																				<option value="181" data-area="181">Low Vision Practitioner</option>
+																				<option value="204" data-area="204">Maxillofacial Surgeon</option>
+																				<option value="69" data-area="69">Medical And Clinical Geneticist</option>
+																				<option value="114" data-area="114">Medical Examination (Visa)</option>
+																				<option value="199" data-area="199">Medical Fitness Certificate for Sports </option>
+																				<option value="70" data-area="70">Medical Gastroenterologist</option>
+																				<option value="71" data-area="71">Medical Microbiologist</option>
+																				<option value="217" data-area="217">Medical Nutritional</option>
+																				<option value="218" data-area="218">Medical Nutritional</option>
+																				<option value="174" data-area="174">Medical Officer</option>
+																				<option value="178" data-area="178">Medical Officer - Ophthalmology</option>
+																				<option value="107" data-area="107">Medical Virologist</option>
+																				<option value="110" data-area="110">Memory Clinic</option>
+																				<option value="135" data-area="135">Microbiologist  </option>
+																				<option value="134" data-area="134">Mycologist</option>
+																				<option value="12" data-area="12">Neonatal Paediatrician</option>
+																				<option value="151" data-area="151">Neonatologist</option>
+																				<option value="72" data-area="72">Nephrologist</option>
+																				<option value="38" data-area="38">Neuro Physician</option>
+																				<option value="74" data-area="74">Neuro Physiologist</option>
+																				<option value="13" data-area="13">Neuro Surgeon</option>
+																				<option value="149" data-area="149">Neurologist</option>
+																				<option value="200" data-area="200">Nutrition Physician</option>
+																				<option value="75" data-area="75">Nutrition Specialist</option>
+																				<option value="76" data-area="76">Nutritionist</option>
+																				<option value="132" data-area="132">Obstetrician</option>
+																				<option value="147" data-area="147">Obstetrician &amp; Gynaecologist</option>
+																				<option value="162" data-area="162">Obstetrician, Fetal Medicine Specialist &amp; Genetic Consultation</option>
+																				<option value="44" data-area="44">Occupational Medicine</option>
+																				<option value="77" data-area="77">Occupational Therapist</option>
+																				<option value="146" data-area="146">Oculoplastic Surgeon</option>
+																				<option value="33" data-area="33">Oncological Surgeon</option>
+																				<option value="150" data-area="150">Oncologist</option>
+																				<option value="121" data-area="121">Oncologist - Cancer Specialist</option>
+																				<option value="14" data-area="14">Ophthalmologist</option>
+																				<option value="182" data-area="182">Optometrist</option>
+																				<option value="78" data-area="78">Oral And Maxillofacial Surgeon</option>
+																				<option value="79" data-area="79">Oral Dental And Maxillofacial Surgeon</option>
+																				<option value="210" data-area="210">Orthodontic Surgeon</option>
+																				<option value="81" data-area="81">Orthodontist</option>
+																				<option value="111" data-area="111">Orthopaedic Surgeon</option>
+																				<option value="172" data-area="172">Orthopaedic Surgeon (Adult &amp; Paediatric)</option>
+																				<option value="15" data-area="15">Paediatric Cardiologist	</option>
+																				<option value="235" data-area="235">Paediatric Cardiothoracic Surgeon</option>
+																				<option value="16" data-area="16">Paediatric Dermatologist</option>
+																				<option value="144" data-area="144">Paediatric Endocrinologist</option>
+																				<option value="159" data-area="159">Paediatric Eye Surgeon</option>
+																				<option value="140" data-area="140">Paediatric Neonatologist</option>
+																				<option value="82" data-area="82">Paediatric Nephrologist</option>
+																				<option value="19" data-area="19">Paediatric Neurologist</option>
+																				<option value="163" data-area="163">Paediatric Oncologist</option>
+																				<option value="198" data-area="198">Paediatric Oncologist(Child And Adolescents)</option>
+																				<option value="183" data-area="183">Paediatric Optometrist</option>
+																				<option value="18" data-area="18">Paediatric Orthopaedic Surgeon</option>
+																				<option value="141" data-area="141">Paediatric Psychiatrist</option>
+																				<option value="17" data-area="17">Paediatric Surgeon	</option>
+																				<option value="83" data-area="83">Paediatric Vaccinologist</option>
+																				<option value="32" data-area="32">Paediatrician</option>
+																				<option value="84" data-area="84">Paediatrics And Paediatric Neurodisability</option>
+																				<option value="130" data-area="130">Pain Management</option>
+																				<option value="231" data-area="231">Pain Management</option>
+																				<option value="85" data-area="85">Parasitologist</option>
+																				<option value="20" data-area="20">Pathologist</option>
+																				<option value="21" data-area="21">Pediatric Cardiac Surgeon</option>
+																				<option value="31" data-area="31">Physician</option>
+																				<option value="234" data-area="234">Physician And Endocrinologists</option>
+																				<option value="89" data-area="89">Physiotherapist</option>
+																				<option value="222" data-area="222">Physiotherapy/Pain And Orthopedic Neuro Rehabilitation</option>
+																				<option value="233" data-area="233">Plastic And Reconstructive Surgeon</option>
+																				<option value="30" data-area="30">Plastic Surgeon</option>
+																				<option value="142" data-area="142">Prosthodontist</option>
+																				<option value="29" data-area="29">Psychiatrist</option>
+																				<option value="232" data-area="232">Psychiatrist (Child And Adolescents)</option>
+																				<option value="201" data-area="201">Psycho Social Practitioner</option>
+																				<option value="90" data-area="90">Psychological Counselling</option>
+																				<option value="28" data-area="28">Psychologist	</option>
+																				<option value="209" data-area="209">Pulmonary Rehabilitation Therapist</option>
+																				<option value="109" data-area="109">Quarterisation Charges</option>
+																				<option value="91" data-area="91">Radiologist</option>
+																				<option value="212" data-area="212">Reproductive Endocrinologist</option>
+																				<option value="92" data-area="92">Respiratory Medicine</option>
+																				<option value="117" data-area="117">Restorative Dentist</option>
+																				<option value="27" data-area="27">Rheumatologist</option>
+																				<option value="138" data-area="138">Rheumatology And  Rehabilitation</option>
+																				<option value="113" data-area="113">S.T.D</option>
+																				<option value="220" data-area="220">Scanning</option>
+																				<option value="180" data-area="180">Senior Orthoptist</option>
+																				<option value="173" data-area="173">Sexual Health</option>
+																				<option value="106" data-area="106">Sexual Medicine</option>
+																				<option value="229" data-area="229">Skin Care And Cosmetic Centre - Plastic Surgeon</option>
+																				<option value="227" data-area="227">Skin Care And Cosmetic Consultant Dermatologist</option>
+																				<option value="228" data-area="228">Skin Care And Cosmetic Oculoplastic Surgeon</option>
+																				<option value="177" data-area="177">Special Education Consultant</option>
+																				<option value="167" data-area="167">Special Educational Needs</option>
+																				<option value="168" data-area="168">Specialist in Laparoscopic Surgery</option>
+																				<option value="94" data-area="94">Speech And Language Therapist</option>
+																				<option value="184" data-area="184">Speech Language Pathologist</option>
+																				<option value="95" data-area="95">Speech Pathologist</option>
+																				<option value="123" data-area="123">Speech Pathologist/Therapist</option>
+																				<option value="26" data-area="26">Speech Therapist</option>
+																				<option value="169" data-area="169">Speech Therapist/Autism</option>
+																				<option value="160" data-area="160">Sports and Exercise Medicine</option>
+																				<option value="25" data-area="25">Sports Medicine</option>
+																				<option value="213" data-area="213">Sports Nutrition &amp; Performance</option>
+																				<option value="156" data-area="156">Sports Psychology</option>
+																				<option value="97" data-area="97">Study Disorders And Counselling</option>
+																				<option value="98" data-area="98">Sub Fertility Specialist</option>
+																				<option value="24" data-area="24">Surgeon</option>
+																				<option value="194" data-area="194">Telemedicine</option>
+																				<option value="42" data-area="42">Thoracic Surgeon</option>
+																				<option value="23" data-area="23">Transfusion Medicine</option>
+																				<option value="225" data-area="225">Transfusion Physician</option>
+																				<option value="126" data-area="126">Transplant Surgeon</option>
+																				<option value="175" data-area="175">Urological Surgeon</option>
+																				<option value="22" data-area="22">Urologist</option>
+																				<option value="108" data-area="108">UV Therapy</option>
+																				<option value="157" data-area="157">Vaccine Advice</option>
+																				<option value="99" data-area="99">Vaccinologist</option>
+																				<option value="119" data-area="119">Vascular And Transplant Surgeon</option>
+																				<option value="100" data-area="100">Vascular And Transplant Surgeon Liver And Kidney</option>
+																				<option value="101" data-area="101">Vascular Surgeon</option>
+																				<option value="93" data-area="93">Venereologist (S.T.D)</option>
+																				<option value="102" data-area="102">Virologist</option>
+																				<option value="103" data-area="103">Vitreoretinal Surgeon </option>
+																				<option value="133" data-area="133">Weight Management</option>
+																				<option value="197" data-area="197">Well Woman Clinics</option>
+														</select><div class="chosen-container chosen-container-single" style="width: 315px;" title="" id="specialization_input_chosen"><a class="chosen-single"><span>Any Specialization</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+			</div>
+
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+				<input class="form-control picker__input" placeholder="Any Date" id="appointment-date" style="cursor:pointer;" name="date" type="text" value="" readonly="" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="appointment-date_root">
+			</div>
+
+			<button type="submit" class="button-primary button-primary--red btn btn-block btn-main-search"><i class="fa fa-search"></i> Search</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+<section class="main-links">
+	<div class="container main-links__container">
+		<div class="row">
+			<!--			<div class="col-md-3 main-link__col">
+							<a href="#/" class="main-link__content">
+								<div class="main-link__icon">
+									 <img src="./images/doctor-stethoscope.png" alt="" title=""/>
+									<i class="fa fa-stethoscope" aria-hidden="true"></i>
+								</div>
+								<div class="main-link__text">
+									<h3 class="main-link__title">Family Doctor</h3>
+									<span class="main-link__sub-title">Make an appointment</span>
+								</div>
+							</a>
+						</div>-->
+			<div class="col-md- main-link__col" id="first-link"></div>
+			<div class="col-md-3 main-link__col">
+				<a href="https://www.doc.lk/healthnet" class="main-link__content">
+					<div class="main-link__icon">
+						<img src="./FrontData_files/pills.png">
+					</div>
+					<div class="main-link__text">
+						<h3 class="main-link__title">Medicine</h3>
+						<span class="main-link__sub-title">to Your Doorstep</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-3 main-link__col">
+				<a href="https://www.doc.lk/certis" class="main-link__content">
+					<div class="main-link__icon">
+						<img src="./FrontData_files/ambulance.png">
+					</div>
+					<div class="main-link__text">
+						<h3 class="main-link__title">Healthcare</h3>
+						<span class="main-link__sub-title">to Your Doorstep</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-3 main-link__col">
+				<a href="http://healthvault.doc.lk/Dashboard" class="main-link__content">
+					<div class="main-link__icon">
+						<img src="./FrontData_files/heartbeat.png">
+					</div>
+					<div class="main-link__text">
+						<h3 class="main-link__title">My Health</h3>
+						<span class="main-link__sub-title">Records</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+		
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<h4>Services</h4>
+						<ul>
+							<li><a href="https://www.doc.lk/">Channel Your Doctor</a></li>
+							<!--<li><a href="#/">Family Doctor</a></li>-->
+							<li>Medicine to Your Doorstep</li>
+							<li>Healthcare to Your Doorstep</li>
+							<li>My Health</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<h4>Health Pack</h4>
+						<ul>
+							<li><a href="https://www.doc.lk/hospitals">Partners</a></li>
+							<li><a href="https://www.doc.lk/about">About Us</a></li>
+						
+							<li><a href="https://www.doc.lk/contact">Contact Us</a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+				
+			</div>
+		</footer>
+
+		<!-- models -->
+		<div id="container-tooltip"></div>
+		<div id="container-modal">
+			<div class="modal fade" id="searchAlertModal">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle-o fa-fw"></i></span></button><br>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+<!-- advert-model -->
+<div class="modal fade" id="advertModel" tabindex="-1" role="dialog" aria-labelledby="advertModelLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times fa-fw"></i></button>
+				<h4 class="modal-title" id="advertModelLabel">
+					<i class="fa fa-stethoscope fa-fw"></i>
+				</h4>
+			</div>
+			<div class="modal-body">
+				<section class="advert-promotions ui-print-hide">
+					
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /advert-model -->
+
+		<div class="picker" id="appointment-date_root" aria-hidden="true"><div class="picker__holder"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><div class="picker__month">September</div><div class="picker__year">2017</div><div class="picker__nav--prev picker__nav--disabled" data-nav="-1" role="button" aria-controls="appointment-date_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="appointment-date_table" title="Next month"> </div></div><table class="picker__table" id="appointment-date_table" role="grid" aria-controls="appointment-date" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus picker__day--disabled" data-pick="1503772200000" role="gridcell" aria-disabled="true">27</div></td><td role="presentation"><div class="picker__day picker__day--outfocus picker__day--disabled" data-pick="1503858600000" role="gridcell" aria-disabled="true">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus picker__day--disabled" data-pick="1503945000000" role="gridcell" aria-disabled="true">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus picker__day--disabled" data-pick="1504031400000" role="gridcell" aria-disabled="true">30</div></td><td role="presentation"><div class="picker__day picker__day--outfocus picker__day--disabled" data-pick="1504117800000" role="gridcell" aria-disabled="true">31</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504204200000" role="gridcell" aria-disabled="true">1</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504290600000" role="gridcell" aria-disabled="true">2</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504377000000" role="gridcell" aria-disabled="true">3</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504463400000" role="gridcell" aria-disabled="true">4</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504549800000" role="gridcell" aria-disabled="true">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504636200000" role="gridcell" aria-disabled="true">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504722600000" role="gridcell" aria-disabled="true">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504809000000" role="gridcell" aria-disabled="true">8</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504895400000" role="gridcell" aria-disabled="true">9</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1504981800000" role="gridcell" aria-disabled="true">10</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1505068200000" role="gridcell" aria-disabled="true">11</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1505154600000" role="gridcell" aria-disabled="true">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1505241000000" role="gridcell" aria-disabled="true">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1505327400000" role="gridcell" aria-disabled="true">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--disabled" data-pick="1505413800000" role="gridcell" aria-disabled="true">15</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1505500200000" role="gridcell" aria-activedescendant="true">16</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1505586600000" role="gridcell">17</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1505673000000" role="gridcell">18</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1505759400000" role="gridcell">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1505845800000" role="gridcell">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1505932200000" role="gridcell">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506018600000" role="gridcell">22</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506105000000" role="gridcell">23</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506191400000" role="gridcell">24</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506277800000" role="gridcell">25</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506364200000" role="gridcell">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506450600000" role="gridcell">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506537000000" role="gridcell">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506623400000" role="gridcell">29</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1506709800000" role="gridcell">30</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1506796200000" role="gridcell">1</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1506882600000" role="gridcell">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1506969000000" role="gridcell">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1507055400000" role="gridcell">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1507141800000" role="gridcell">5</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1507228200000" role="gridcell">6</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1507314600000" role="gridcell">7</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1505500200000" disabled="" aria-controls="appointment-date">Today</button><button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="appointment-date">Clear</button><button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="appointment-date">Close</button></div></div></div></div></div></div></div>
+		<!-- /models -->
+
+		<!-- ENV: cloud - RC 2.1.1 - Time: 0.2646 - Memory: 14.5 MB - Queries: 6 -->
+		<!-- debug -->
+				<!-- /debug -->
+
+		<!-- script -->
+		
+	
+
+
+</body></html>

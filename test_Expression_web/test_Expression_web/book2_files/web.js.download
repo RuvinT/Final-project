@@ -1,0 +1,74 @@
+;
+(function() {
+	'use strict';
+
+	var nua = navigator.userAgent;
+	var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
+	if (isAndroid) {
+		$('html').attr('id', 'android-app');
+	}
+
+	$('#appointment-date').pickadate({
+		container: '#container-modal',
+		format: 'mmmm dd, yyyy',
+		min: new Date()
+	});
+	
+	$('.pick-a-birthdate').pickadate({
+		container: '#container-modal',
+		format: 'mmmm dd, yyyy',
+		selectYears: [80],
+		selectMonths: true,
+		max: new Date(new Date().setFullYear(new Date().getFullYear() - 10))
+	});
+	
+	$('.ui-component').on('swipeRight', function() {
+		$(this).toggleClass('ui-show-options');
+	});
+	
+	$('.ui-component-cancel').bind('tap', function() {
+		$(this).toggleClass('ui-show-options');
+	});
+	
+	$('.ui-component-holiday').bind('tap', function() {
+		$(this).toggleClass('ui-show-options');
+	});
+
+	$('.ui-component-full').bind('tap', function() {
+		$(this).toggleClass('ui-show-options');
+	});
+
+	$('.ui-component-hold').bind('tap', function() {
+		$(this).toggleClass('ui-show-options');
+	});
+
+	$('.ui-component-web-disable').bind('tap', function() {
+		$(this).toggleClass('ui-show-options');
+	});
+
+	$('.ui-component-disable').bind('tap', function() {
+		$(this).toggleClass('ui-show-options');
+	});
+
+	$('.ui-component-content').on('click tap', function() {
+		var link = $(this).data('link');
+		if (link)
+		{
+			window.location.href = link;
+		}
+	});
+
+	$('.ui-action').tooltip({
+		container: '#container-tooltip'
+	});
+	
+	$('.ui-action-popover').popover({
+		html: true,
+		container: '#container-tooltip'
+	});
+
+	$(window).on('scroll swipeLeft', function() {
+		$('.ui-component').removeClass('ui-show-options');
+	});
+
+})(jQuery);
