@@ -36,6 +36,7 @@ namespace test_Expression_web
             Session["Time"] = Request.QueryString["Time"].ToString();
             Session["doctor"] = Request.QueryString["Doc"].ToString();
             Session["cou"] = Request.QueryString["cou"].ToString();
+            Session["spe"] = Request.QueryString["spe"].ToString();
             Session["rad"] = rad;
             Server.Transfer("BookP2.aspx");
 

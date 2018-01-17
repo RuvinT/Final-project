@@ -177,12 +177,21 @@
 									
 			<dt>Total Charges</dt>
 			<dd>
-				<strong><span id="total-charge">2500.00</span> LKR</strong> <small>(Including Tax) <span style="color: #01ab19;" id="total-charge-text"></span></small>
-			</dd>
+				<strong><span id="total-charge">2500.00</span> LKR</strong> <small>(Including Tax) <span style="color: #01ab19;" id="total-charge-text"></span>
+               
+                </small>
+			</dd><br />
 																	
-                                                                        </dl>
+       <asp:Button ID="Button1" runat="server" class="btn btn-dialog"  Text="Pay" OnClick="Button1_Click" Width="239px" />                                                              </dl>
 	</div>
+
+
 <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;"><i class="fa fa-angle-right fa-3x"></i></button>
+                                                                        
+					
+			
+		
+        
                                                                         
 					
 			

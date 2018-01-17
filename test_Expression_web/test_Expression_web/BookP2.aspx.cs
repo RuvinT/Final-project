@@ -29,28 +29,30 @@ namespace test_Expression_web
            count.Text= Session["cou"].ToString();
 
         }
-        protected void Unnamed9_Click(object sender, EventArgs e)
-        {
+        
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
             try
             {
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
                 conn.Open();
 
-                String insertQ = "insert into DocSedule(Specification,DoctorName,Date,Time,Hospital) values (@spe,@d_name,@date,@time,@hos)";
-
+                String insertQ = "insert into DocSedule(DoctorID,Specification,DoctorName,Date,Time,Hospital) values (@did,@spe,@d_name,@date,@time,@hos)";
+                String insertQ1 = "select DoctorID from DocSedule";
                 SqlCommand com = new SqlCommand(insertQ, conn);
+                SqlCommand com1 = new SqlCommand(insertQ1, conn);
+                com.Parameters.AddWithValue("@did", com1.ExecuteScalar().ToString());
+                com.Parameters.AddWithValue("@spe", Session["spe"].ToString());
+                com.Parameters.AddWithValue("@d_name", Session["doctor"].ToString());
+                com.Parameters.AddWithValue("@date", Session["Date"].ToString());
+                com.Parameters.AddWithValue("@time", Session["Time"].ToString());
+                com.Parameters.AddWithValue("@hos", Session["hos"].ToString());
 
-                
-                com.Parameters.AddWithValue("@spe", age.Text);
-                com.Parameters.AddWithValue("@d_name", gen.SelectedItem.ToString());
-                com.Parameters.AddWithValue("@date", tp.Text);
-                com.Parameters.AddWithValue("@time", email.Text);
-                com.Parameters.AddWithValue("@hos", password.Text);
-                
                 com.ExecuteNonQuery();
 
                 conn.Close();
+                Response.Write("<script>alert('Your booking was successful');</script>");
 
             }
             catch (Exception ex)
@@ -59,7 +61,6 @@ namespace test_Expression_web
 
             }
 
-            Response.Redirect("Appointment.aspx");
 
         }
     }
