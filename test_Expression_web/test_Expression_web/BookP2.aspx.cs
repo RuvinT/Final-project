@@ -32,7 +32,7 @@ namespace test_Expression_web
 
 
 
-            String insertQ2 = "select RoomNumber from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
+            String insertQ2 = "select RoomNumber from DocSedule where DoctorName='" + Session["doctor"].ToString() + "' AND Date='" + Session["Date"].ToString() + "' AND Hospital='" + Session["hos"].ToString() + "' AND Time='"+ Session["Time"].ToString() + "'";
            
 
             SqlCommand com2 = new SqlCommand(insertQ2, conn);
@@ -66,7 +66,7 @@ namespace test_Expression_web
                 SqlCommand com2 = new SqlCommand(insertQ2, conn);
                int max=int.Parse(  com2.ExecuteScalar().ToString());
                 max = max + 1;
-                String updateQ = "update DocSedule set PacientNumber='" + max + "' where DoctorName='" + Session["doctor"].ToString() + "' ";
+                String updateQ = "update DocSedule set PacientNumber='" + max + "' where DoctorName='" + Session["doctor"].ToString() + "' AND Date='" + Session["Date"].ToString() + "' AND Hospital='" + Session["hos"].ToString() + "' AND Time='" + Session["Time"].ToString() + "' ";
                 SqlCommand com = new SqlCommand(updateQ, conn);
                
                
