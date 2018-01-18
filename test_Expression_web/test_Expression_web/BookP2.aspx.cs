@@ -27,6 +27,26 @@ namespace test_Expression_web
             time.Text = Session["Time"].ToString();
             doctor.Text= Session["doctor"].ToString();
            count.Text= Session["cou"].ToString();
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
+            conn.Open();
+
+
+
+            String insertQ2 = "select RoomNumber from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
+           
+
+            SqlCommand com2 = new SqlCommand(insertQ2, conn);
+           
+            room.Text = com2.ExecuteScalar().ToString();
+            
+           
+            
+
+
+
+         
+
+            conn.Close();
 
         }
         
@@ -38,19 +58,18 @@ namespace test_Expression_web
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
                 conn.Open();
 
-                String insertQ = "insert into DocSedule(DoctorID,Specification,DoctorName,Date,Time,Hospital,MaxPacients) values (@did,@spe,@d_name,@date,@time,@hos,@mp)";
-                String insertQ1 = "select DoctorID from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
-                String insertQ2 = "select MaxPacients from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
-                SqlCommand com = new SqlCommand(insertQ, conn);
-                SqlCommand com1 = new SqlCommand(insertQ1, conn);
+               
+                
+                String insertQ2 = "select PacientNumber from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
+              
+                
                 SqlCommand com2 = new SqlCommand(insertQ2, conn);
-                com.Parameters.AddWithValue("@mp", com2.ExecuteScalar().ToString());
-                com.Parameters.AddWithValue("@did", com1.ExecuteScalar().ToString());
-                com.Parameters.AddWithValue("@spe", Session["spe"].ToString());
-                com.Parameters.AddWithValue("@d_name", Session["doctor"].ToString());
-                com.Parameters.AddWithValue("@date", Session["Date"].ToString());
-                com.Parameters.AddWithValue("@time", Session["Time"].ToString());
-                com.Parameters.AddWithValue("@hos", Session["hos"].ToString());
+               int max=int.Parse(  com2.ExecuteScalar().ToString());
+                max = max + 1;
+                String updateQ = "update DocSedule set PacientNumber='" + max + "' where DoctorName='" + Session["doctor"].ToString() + "' ";
+                SqlCommand com = new SqlCommand(updateQ, conn);
+               
+               
 
                 com.ExecuteNonQuery();
 

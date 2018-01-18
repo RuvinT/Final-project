@@ -120,9 +120,7 @@
 
 		<div class="ui-component-options">
 			<ul>
-				<li>
-					<a href="https://www.doc.lk/appointment#" class="ui-action" data-toggle="tooltip" data-placement="right" title="" data-original-title="Your Appointment Time">4:35 PM</a>
-				</li>
+				
 				<li class="session-status">Available</li>
 			</ul>
 		
@@ -157,7 +155,8 @@
                 <asp:Label ID="hos" runat="server" Text="Label"></asp:Label></dd>
 
 						<dt>Room</dt>
-			<dd>27</dd>
+			<dd>
+                <asp:Label ID="room" runat="server" Text="Label"></asp:Label></dd>
 			
 			<dt>Appointment Time</dt>
 			<dd>

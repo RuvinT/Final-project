@@ -159,8 +159,9 @@
                     </asp:DropDownList>
 				
 					<span class="input-group-addon"></span>
+                  
                     <asp:TextBox ID="name" class="form-control" placeholder="Name - Required" runat="server"></asp:TextBox>
-					
+					  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ControlToValidate="name" ErrorMessage="Name is required"></asp:RequiredFieldValidator>
 				</div>
 				
 			</div>
@@ -171,7 +172,9 @@
 			<div class="col-lg-8">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-phone text-danger"></i></span>
+                   
                     <asp:TextBox ID="phone" class="form-control" placeholder="Phone - Required" runat="server"></asp:TextBox>
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ForeColor="Red" ControlToValidate="phone" ErrorMessage="Phone is required"></asp:RequiredFieldValidator>
 				</div>
 				
 			</div>
@@ -211,6 +214,7 @@
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-certificate text-warning"></i></span>
                     <asp:TextBox ID="nic" class="form-control" placeholder="NIC  - Required" runat="server"></asp:TextBox>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ForeColor="Red" ControlToValidate="nic" ErrorMessage="NIC is required"></asp:RequiredFieldValidator>
 				</div>
 				
 			</div>
@@ -232,7 +236,8 @@
 			<div class="col-lg-8">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                    <asp:TextBox ID="email" class="form-control" placeholder="E-Mail - Optional" runat="server"></asp:TextBox> 
+                    <asp:TextBox ID="email" class="form-control" placeholder="E-Mail - Optional" runat="server"></asp:TextBox>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ForeColor="Red" ControlToValidate="email" ErrorMessage="Email is required"></asp:RequiredFieldValidator>
 				</div>
 				
 			</div>

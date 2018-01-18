@@ -40,7 +40,7 @@ namespace test_Expression_web
             {
 
 
-                SqlDataAdapter da = new SqlDataAdapter("SELECT Date,Specification,Time,DoctorName,Hospital,PacientNumber FROM DocSedule WHERE DoctorName ='" + Request.QueryString["Doc"].ToString() + "' AND Hospital='" + Request.QueryString["Hos"].ToString() + "' GROUP BY Date,Time,DoctorName,Hospital,Specification ", con);
+                SqlDataAdapter da = new SqlDataAdapter("SELECT Date,Specification,Time,DoctorName,Hospital,PacientNumber FROM DocSedule WHERE DoctorName ='" + Request.QueryString["Doc"].ToString() + "' AND Hospital='" + Request.QueryString["Hos"].ToString() + "' GROUP BY Date,Time,DoctorName,Hospital,Specification,PacientNumber ", con);
 
                 DataSet ds = new DataSet();
                 da.Fill(ds);

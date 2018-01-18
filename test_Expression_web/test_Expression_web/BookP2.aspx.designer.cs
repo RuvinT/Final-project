@@ -121,6 +121,15 @@ namespace test_Expression_web {
         protected global::System.Web.UI.WebControls.Label hos;
         
         /// <summary>
+        /// room control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label room;
+        
+        /// <summary>
         /// time1 control.
         /// </summary>
         /// <remarks>

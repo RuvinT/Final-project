@@ -19,7 +19,7 @@ namespace test_Expression_web
 
 
 
-            String insertQ2 = "select MaxPacients from DocSedule where DoctorName='" + Session["doctor"].ToString() + "'";
+            String insertQ2 = "select MaxPacients from DocSedule where DoctorName='" + Request.QueryString["Doc"].ToString() + "'";
 
 
             SqlCommand com2 = new SqlCommand(insertQ2, conn);
@@ -51,23 +51,29 @@ namespace test_Expression_web
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (radLocal.Checked) rad = radLocal.Text; else rad = radForign.Text;
-            Session["name"] = name.Text;
-            Session["nic"] = nic.Text;
-            Session["email"] = email.Text;
-            Session["passport"] = passport.Text;
-            Session["phone"] = phone.Text;
-            Session["mr"] = DropDownList1.SelectedItem;
-            Session["hos"] = Request.QueryString["Hos"].ToString();
-            Session["Date"] = Request.QueryString["Date"].ToString();
-            Session["Time"] = Request.QueryString["Time"].ToString();
-            Session["doctor"] = Request.QueryString["Doc"].ToString();
-            Session["cou"] = Request.QueryString["cou"].ToString();
-            Session["spe"] = Request.QueryString["spe"].ToString();
-            Session["rad"] = rad;
-            Server.Transfer("BookP2.aspx");
+            if (Page.IsValid)
+            {
+                if (radLocal.Checked) rad = radLocal.Text; else rad = radForign.Text;
+                Session["name"] = name.Text;
+                Session["nic"] = nic.Text;
+                Session["email"] = email.Text;
+                Session["passport"] = passport.Text;
+                Session["phone"] = phone.Text;
+                Session["mr"] = DropDownList1.SelectedItem;
+                Session["hos"] = Request.QueryString["Hos"].ToString();
+                Session["Date"] = Request.QueryString["Date"].ToString();
+                Session["Time"] = Request.QueryString["Time"].ToString();
+                Session["doctor"] = Request.QueryString["Doc"].ToString();
+                Session["cou"] = Request.QueryString["cou"].ToString();
+                Session["spe"] = Request.QueryString["spe"].ToString();
+                Session["rad"] = rad;
+                Server.Transfer("BookP2.aspx");
 
-
+            }
+            else
+            {
+                Response.Write("<script>alert('Data not saved invalid data');</script>");
+            }
 
 
         }
