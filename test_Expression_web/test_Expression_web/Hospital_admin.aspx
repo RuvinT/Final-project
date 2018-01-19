@@ -7,7 +7,7 @@
     <title></title>
     <style type="text/css">
         #form1 {
-            height: 448px;
+            height: 586px;
             width:1485px;
         }
         #GridView1{
@@ -39,6 +39,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T1" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="DoctorID required" ControlToValidate="T1" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Specification" SortExpression="Specification">
@@ -50,6 +51,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T2" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Specification required" ControlToValidate="T2" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="DoctorName" SortExpression="DoctorName">
@@ -61,6 +63,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T3" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="DoctorName required" ControlToValidate="T3" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Date" SortExpression="Date">
@@ -72,6 +75,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T4" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Date required" ControlToValidate="T4" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Time" SortExpression="Time">
@@ -83,6 +87,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T5" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Time required" ControlToValidate="T5" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Hospital" SortExpression="Hospital">
@@ -94,6 +99,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T6" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Hospital required" ControlToValidate="T6" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="MaxPacients" SortExpression="MaxPacients">
@@ -105,6 +111,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T7" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Max pacients required" ControlToValidate="T7" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="PacientNumber" SortExpression="PacientNumber">
@@ -116,6 +123,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T8" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Pacient number required" ControlToValidate="T8" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="RoomNumber" SortExpression="RoomNumber">
@@ -127,6 +135,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T9" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="Room number required" ControlToValidate="T1" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="TP" SortExpression="TP">
@@ -138,6 +147,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="T10" runat="server"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="TP required" ControlToValidate="T10" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="DoctorCount" InsertVisible="False" SortExpression="DoctorCount">
@@ -164,6 +174,8 @@
                 <SortedDescendingCellStyle BackColor="#FCF6C0" />
                 <SortedDescendingHeaderStyle BackColor="#820000" />
             </asp:GridView>
+
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" Height="189px" />
         </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HealthPackConnectionString %>" DeleteCommand="DELETE FROM [DocSedule] WHERE [DoctorCount] = @DoctorCount" InsertCommand="INSERT INTO [DocSedule] ([DoctorID], [Specification], [DoctorName], [Date], [Time], [Hospital], [MaxPacients], [PacientNumber], [RoomNumber], [TP]) VALUES (@DoctorID, @Specification, @DoctorName, @Date, @Time, @Hospital, @MaxPacients, @PacientNumber, @RoomNumber, @TP)" SelectCommand="SELECT * FROM [DocSedule]" UpdateCommand="UPDATE [DocSedule] SET [DoctorID] = @DoctorID, [Specification] = @Specification, [DoctorName] = @DoctorName, [Date] = @Date, [Time] = @Time, [Hospital] = @Hospital, [MaxPacients] = @MaxPacients, [PacientNumber] = @PacientNumber, [RoomNumber] = @RoomNumber, [TP] = @TP WHERE [DoctorCount] = @DoctorCount">
             <DeleteParameters>
