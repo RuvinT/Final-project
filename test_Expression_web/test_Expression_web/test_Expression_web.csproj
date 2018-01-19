@@ -178,6 +178,7 @@
     <Content Include="DocTimeData_files\style-new.css" />
     <Content Include="DocTimeData_files\style.css" />
     <Content Include="DocTimeData_files\ubuntu.css" />
+    <Content Include="DoctorPrescribe.aspx" />
     <Content Include="external\jquery\jquery.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -426,6 +427,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorPrescribe.aspx.cs">
+      <DependentUpon>DoctorPrescribe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorPrescribe.aspx.designer.cs">
+      <DependentUpon>DoctorPrescribe.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontPage.aspx.cs">
       <DependentUpon>FrontPage.aspx</DependentUpon>

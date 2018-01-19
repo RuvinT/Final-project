@@ -58,12 +58,16 @@ namespace test_Expression_web
                 }
                 else
                 {
-                    Response.Write("Email password not match");
+                    Response.Write(" password not match");
                 }
 
 
-                    
 
+
+            }
+            else
+            {
+                Response.Write("Email  not match");
             }
                 
 
