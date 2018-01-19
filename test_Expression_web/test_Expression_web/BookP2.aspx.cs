@@ -84,6 +84,19 @@ namespace test_Expression_web
             }
 
 
+
+           /* String insertQ = "insert into Appointment(DoctorId,Date) values (@id,@date)";
+
+            SqlCommand com = new SqlCommand(insertQ, conn);
+
+            com.Parameters.AddWithValue("@id", appdocid.Text);
+            com.Parameters.AddWithValue("@date", appdate.Text);
+
+
+
+            com.ExecuteNonQuery();*/
+
+
         }
     }
 }

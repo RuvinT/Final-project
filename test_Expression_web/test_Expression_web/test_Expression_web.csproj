@@ -247,6 +247,7 @@
     <Content Include="DocTimeData_files\slick.min.js.download" />
     <Content Include="DocTimeData_files\touch.js.download" />
     <Content Include="DocTimeData_files\web.js.download" />
+    <Content Include="Hospital_admin.aspx" />
     <Content Include="hospital_files\985539714849684" />
     <Content Include="hospital_files\analytics.js.download" />
     <Content Include="hospital_files\bootstrap.min.js.download" />
@@ -442,6 +443,13 @@
     </Compile>
     <Compile Include="Health_pack_front.aspx.designer.cs">
       <DependentUpon>Health_pack_front.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital_admin.aspx.cs">
+      <DependentUpon>Hospital_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital_admin.aspx.designer.cs">
+      <DependentUpon>Hospital_admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Hospital_select.aspx.cs">
       <DependentUpon>Hospital_select.aspx</DependentUpon>

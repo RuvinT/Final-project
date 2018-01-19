@@ -17,9 +17,6 @@
 	<link rel="stylesheet" href="css/form-login.css">
 
     <style type="text/css">
-        .auto-style1 {
-            margin-left: 131px;
-        }
         .auto-style3 {
             margin-left: 0px;
             margin-top: 31px;
@@ -40,19 +37,27 @@
 
             <div class="form-log-in-with-email">
 
+               
+                <a href="FrontPage.aspx" class="form-create-an-account">Back to main Page &rarr;</a>
+
                 <div class="form-white-background">
 
                     <div class="form-title-row">
-                        <h1>Make an Appointment</h1></br>
-                        <h1>Avaiable Doctors</h1>
+                        <h1>Hospital Administrator</h1></br>
+                        <h1>&nbsp;Doctors sedule editor</h1>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HealthPackConnectionString %>" SelectCommand="SELECT * FROM [DocSedule]"></asp:SqlDataSource>
-                        <asp:GridView ID="GridView1" runat="server" CssClass="auto-style3" Width="449px" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="DoctorID" DataSourceID="SqlDataSource1">
+                        <asp:GridView ID="GridView1" runat="server" CssClass="auto-style3" Width="372px" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1">
                             <Columns>
-                                <asp:BoundField DataField="DoctorID" HeaderText="DoctorID" ReadOnly="True" SortExpression="DoctorID" />
+                                <asp:BoundField DataField="DoctorID" HeaderText="DoctorID" SortExpression="DoctorID" />
                                 <asp:BoundField DataField="Specification" HeaderText="Specification" SortExpression="Specification" />
                                 <asp:BoundField DataField="DoctorName" HeaderText="DoctorName" SortExpression="DoctorName" />
                                 <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
                                 <asp:BoundField DataField="Time" HeaderText="Time" SortExpression="Time" />
+                                <asp:BoundField DataField="Hospital" HeaderText="Hospital" SortExpression="Hospital" />
+                                <asp:BoundField DataField="MaxPacients" HeaderText="MaxPacients" SortExpression="MaxPacients" />
+                                <asp:BoundField DataField="PacientNumber" HeaderText="PacientNumber" SortExpression="PacientNumber" />
+                                <asp:BoundField DataField="RoomNumber" HeaderText="RoomNumber" SortExpression="RoomNumber" />
+                                <asp:BoundField DataField="TP" HeaderText="TP" SortExpression="TP" />
                             </Columns>
                             <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
                             <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
@@ -67,34 +72,13 @@
                     </div>
 
                     <div class="form-row">
-                        <label>
-                            
-                            <asp:TextBox ID="appdocid" runat="server" OnTextChanged="appdocid_TextChanged" placeholder="Doctor name"></asp:TextBox>
-                
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="appdocid" ErrorMessage="Enter name" ForeColor="Red"></asp:RequiredFieldValidator>
-                
-                            </label>
                     </div>
                      <div class="form-row">
-                        <label>
-                            <asp:TextBox ID="appdate" runat="server" OnTextChanged="appdate_TextChanged" placeholder="Date"></asp:TextBox>
-                             
-                            
-                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="appdate" ErrorMessage="Enter date" ForeColor="Red"></asp:RequiredFieldValidator>
-                             
-                            
-                        </label>
-                    </div>
-
-                    <div class="form-row">
-                       <asp:Button ID="submit" runat="server" Text="Submit" BackColor="#0099FF" CssClass="auto-style1" ForeColor="White" Width="266px" OnClick="submit_Click" />
                     </div>
 
                 </div>
 
                
-                <a href="FrontPage.aspx" class="form-create-an-account">Back to main Page &rarr;</a>
-
             </div>
 
             
