@@ -128,6 +128,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="about.jpg" />
+    <Content Include="about2.jpg" />
+    <Content Include="aboutus_files\1.jpg" />
+    <Content Include="aboutus_files\2.jpg" />
+    <Content Include="aboutus_files\3.jpg" />
+    <Content Include="aboutus_files\4.jpg" />
+    <Content Include="aboutus_files\a1.jpg" />
+    <Content Include="aboutus_files\a2.jpg" />
+    <Content Include="aboutus_files\a31.jpg" />
+    <Content Include="aboutus_files\a4.jpg" />
+    <Content Include="aboutus_files\about.jpg" />
+    <Content Include="aboutus_files\Facebook_icon.jpg" />
+    <Content Include="aboutus_files\george_steuart_health_logo.png" />
+    <Content Include="aboutus_files\gs_logo.png" />
+    <Content Include="aboutus_files\jquery.simplyscroll.css" />
+    <Content Include="aboutus_files\ph01.png" />
+    <Content Include="aboutus_files\ph02.png" />
+    <Content Include="aboutus_files\ph1.jpg" />
+    <Content Include="aboutus_files\ph2.jpg" />
+    <Content Include="aboutus_files\style.css" />
+    <Content Include="aboutus_files\stylesheet.css" />
+    <Content Include="aboutus_files\triangle.png" />
     <Content Include="Appointment.aspx" />
     <Content Include="Book1_files\bootstrap-chosen.css" />
     <Content Include="Book1_files\bootstrap.min.css" />
@@ -198,6 +220,39 @@
     <Content Include="FrontData_files\ubuntu.css" />
     <Content Include="FrontData_files\web-index.css" />
     <Content Include="FrontPage.aspx" />
+    <Content Include="George Steuart Health_files\1.jpg" />
+    <Content Include="George Steuart Health_files\2.jpg" />
+    <Content Include="George Steuart Health_files\3.jpg" />
+    <Content Include="George Steuart Health_files\4.jpg" />
+    <Content Include="George Steuart Health_files\a1.jpg" />
+    <Content Include="George Steuart Health_files\a2.jpg" />
+    <Content Include="George Steuart Health_files\a31.jpg" />
+    <Content Include="George Steuart Health_files\a4.jpg" />
+    <Content Include="George Steuart Health_files\brandsbar.png" />
+    <Content Include="George Steuart Health_files\EnervonCFilmcap%28OEC%29_gshealth.jpg" />
+    <Content Include="George Steuart Health_files\EnervonSyrup%28SL%29_gshealth.jpg" />
+    <Content Include="George Steuart Health_files\Facebook_icon.jpg" />
+    <Content Include="George Steuart Health_files\george_steuart_health_logo.png" />
+    <Content Include="George Steuart Health_files\gs_logo.png" />
+    <Content Include="George Steuart Health_files\G_0mJUVO_ZI.html" />
+    <Content Include="George Steuart Health_files\home_icon1.png" />
+    <Content Include="George Steuart Health_files\home_icon2.png" />
+    <Content Include="George Steuart Health_files\home_icon3.png" />
+    <Content Include="George Steuart Health_files\jquery.simplyscroll.css" />
+    <Content Include="George Steuart Health_files\livewell.png" />
+    <Content Include="George Steuart Health_files\NICARDIA_LOGO.jpg" />
+    <Content Include="George Steuart Health_files\ph01.png" />
+    <Content Include="George Steuart Health_files\ph02.png" />
+    <Content Include="George Steuart Health_files\ph1.jpg" />
+    <Content Include="George Steuart Health_files\ph2.jpg" />
+    <Content Include="George Steuart Health_files\PHCarePinkPassion_gshealth.jpg" />
+    <Content Include="George Steuart Health_files\ShowerFresh_gshealth.jpg" />
+    <Content Include="George Steuart Health_files\SolmuxForteSuspension%28Export%29_gshealth.jpg" />
+    <Content Include="George Steuart Health_files\SolmuxPediaSuspension%28SL%29_gshealth.jpg" />
+    <Content Include="George Steuart Health_files\style.css" />
+    <Content Include="George Steuart Health_files\stylesheet.css" />
+    <Content Include="George Steuart Health_files\triangle.png" />
+    <Content Include="George Steuart Health_files\www-player-webp-vfl_xmubZ.css" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -306,6 +361,24 @@
     <Content Include="book2_files\slick.min.js.download" />
     <Content Include="book2_files\touch.js.download" />
     <Content Include="book2_files\web.js.download" />
+    <Content Include="aboutus_files\jquery.easing.1.3.js.download" />
+    <Content Include="aboutus_files\jquery.eislideshow.js.download" />
+    <Content Include="aboutus_files\jquery.min.js.download" />
+    <Content Include="aboutus_files\jquery.simplyscroll.js.download" />
+    <Content Include="George Steuart Health_files\base.js.download" />
+    <Content Include="George Steuart Health_files\eb1WOqHedYDJpSQ3LuwImrj4qSuOry37nZDmBUkqsxs.js.download" />
+    <Content Include="George Steuart Health_files\jquery.easing.1.3.js.download" />
+    <Content Include="George Steuart Health_files\jquery.eislideshow.js.download" />
+    <Content Include="George Steuart Health_files\jquery.min.js.download" />
+    <Content Include="George Steuart Health_files\jquery.simplyscroll.js.download" />
+    <Content Include="George Steuart Health_files\remote.js.download" />
+    <Content Include="George Steuart Health_files\www-embed-player.js.download" />
+    <Content Include="products_files\jquery.easing.1.3.js.download" />
+    <Content Include="products_files\jquery.eislideshow.js.download" />
+    <Content Include="products_files\jquery.min.js.download" />
+    <Content Include="products_files\jquery.simplyscroll.js.download" />
+    <Content Include="ph1.aspx" />
+    <Content Include="ph2.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Health_pack_front.aspx" />
     <Content Include="hospital.html" />
@@ -343,6 +416,53 @@
     <Content Include="js\jquery.easing.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="login.aspx" />
+    <Content Include="products_files\1.jpg" />
+    <Content Include="products_files\2.jpg" />
+    <Content Include="products_files\3.jpg" />
+    <Content Include="products_files\4.jpg" />
+    <Content Include="products_files\a1.jpg" />
+    <Content Include="products_files\a2.jpg" />
+    <Content Include="products_files\a31.jpg" />
+    <Content Include="products_files\a4.jpg" />
+    <Content Include="products_files\AcryFold.jpg" />
+    <Content Include="products_files\Algitab.jpg" />
+    <Content Include="products_files\appamideplus.jpg" />
+    <Content Include="products_files\appavicspfs.jpg" />
+    <Content Include="products_files\Arteriofix-V_i1.jpg" />
+    <Content Include="products_files\Arteriofix-V_i2.jpg" />
+    <Content Include="products_files\Belcid.jpg" />
+    <Content Include="products_files\blood-glucose-meter.jpg" />
+    <Content Include="products_files\Brethin.jpg" />
+    <Content Include="products_files\CoroflexPlease_i1.jpg" />
+    <Content Include="products_files\dicloransr75.png" />
+    <Content Include="products_files\Dicloran_gel.png" />
+    <Content Include="products_files\Domiset.jpg" />
+    <Content Include="products_files\EnervonCFilmcap%28OEC%29.jpg" />
+    <Content Include="products_files\EnervonHPbox400g%28Sri Lanka%29.jpg" />
+    <Content Include="products_files\Facebook_icon.jpg" />
+    <Content Include="products_files\FastumGel.jpg" />
+    <Content Include="products_files\Flanil-hires.jpg" />
+    <Content Include="products_files\george_steuart_health_logo.png" />
+    <Content Include="products_files\gs_logo.png" />
+    <Content Include="products_files\Hexidine.jpg" />
+    <Content Include="products_files\jquery.simplyscroll.css" />
+    <Content Include="products_files\LogoSample_ByTailorBrands.jpg" />
+    <Content Include="products_files\metrogylDenta.png" />
+    <Content Include="products_files\metrogyl_400.png" />
+    <Content Include="products_files\metrogyl_gel.png" />
+    <Content Include="products_files\moyzen_bathing_bar.jpg" />
+    <Content Include="products_files\NEFIN-20.jpg" />
+    <Content Include="products_files\nicardia_xl.png" />
+    <Content Include="products_files\PHCarePinkPassion.jpg" />
+    <Content Include="products_files\ra_thermoseal1.jpg" />
+    <Content Include="products_files\SequentPlease-Expand03.jpg" />
+    <Content Include="products_files\SequentPlease_hell05.jpg" />
+    <Content Include="products_files\ShowerFresh.jpg" />
+    <Content Include="products_files\style.css" />
+    <Content Include="products_files\stylesheet.css" />
+    <Content Include="products_files\SummerBlossom.jpg" />
+    <Content Include="products_files\thermoseal.jpg" />
+    <Content Include="products_files\triangle.png" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -500,6 +620,20 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ph1.aspx.cs">
+      <DependentUpon>ph1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ph1.aspx.designer.cs">
+      <DependentUpon>ph1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ph2.aspx.cs">
+      <DependentUpon>ph2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ph2.aspx.designer.cs">
+      <DependentUpon>ph2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
