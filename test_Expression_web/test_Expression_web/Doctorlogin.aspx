@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="test_Expression_web.login" %>
-
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Doctorlogin.aspx.cs" Inherits="test_Expression_web.Doctorlogin" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Login Form</title>
+	<title>Login Form for doctors</title>
 
 
 	<link rel="stylesheet" href="css/form-login.css">
@@ -39,7 +37,7 @@
                 <div class="form-white-background">
 
                     <div class="form-title-row">
-                        <h1>Log in</h1>
+                        <h1>Log in doctor</h1>
                     </div>
 
                     <div class="form-row">
@@ -67,8 +65,8 @@
 
                 </div>
 
-                <a href="PaswordResetSend.aspx" class="form-forgotten-password">Forgotten password &middot;</a>
-                <a href="Register.aspx" class="form-create-an-account" >Create an account &rarr;</a>
+              
+                <a href="doctorregister.aspx" class="form-create-an-account" >Create an account &rarr;</a>
 
             </div>
 

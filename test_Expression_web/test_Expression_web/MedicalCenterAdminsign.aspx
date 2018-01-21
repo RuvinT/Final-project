@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="test_Expression_web.login" %>
-
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MedicalCenterAdminsign.aspx.cs" Inherits="test_Expression_web.MedicalCenterAdminsign" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -67,8 +65,8 @@
 
                 </div>
 
-                <a href="PaswordResetSend.aspx" class="form-forgotten-password">Forgotten password &middot;</a>
-                <a href="Register.aspx" class="form-create-an-account" >Create an account &rarr;</a>
+               
+                <a href="HealthCenterAdminRegister.aspx" class="form-create-an-account" >Create an account &rarr;</a>
 
             </div>
 

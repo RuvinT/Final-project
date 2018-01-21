@@ -187,6 +187,7 @@
     <Content Include="css\form-register.css" />
     <Content Include="css\style.css" />
     <Content Include="css\style1.css" />
+    <Content Include="css\style11.css" />
     <Content Include="Default.aspx" />
     <Content Include="DocTimeData.html" />
     <Content Include="DocTimeData_files\bootstrap-chosen.css" />
@@ -200,6 +201,9 @@
     <Content Include="DocTimeData_files\style-new.css" />
     <Content Include="DocTimeData_files\style.css" />
     <Content Include="DocTimeData_files\ubuntu.css" />
+    <Content Include="Doctorlogin.aspx" />
+    <Content Include="DoctorPrescribe.aspx" />
+    <Content Include="doctorregister.aspx" />
     <Content Include="external\jquery\jquery.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -302,6 +306,7 @@
     <Content Include="DocTimeData_files\slick.min.js.download" />
     <Content Include="DocTimeData_files\touch.js.download" />
     <Content Include="DocTimeData_files\web.js.download" />
+    <Content Include="HealthCenterAdminRegister.aspx" />
     <Content Include="Hospital_admin.aspx" />
     <Content Include="hospital_files\985539714849684" />
     <Content Include="hospital_files\analytics.js.download" />
@@ -416,6 +421,7 @@
     <Content Include="js\jquery.easing.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="login.aspx" />
+<<<<<<< HEAD
     <Content Include="products_files\1.jpg" />
     <Content Include="products_files\2.jpg" />
     <Content Include="products_files\3.jpg" />
@@ -463,6 +469,11 @@
     <Content Include="products_files\SummerBlossom.jpg" />
     <Content Include="products_files\thermoseal.jpg" />
     <Content Include="products_files\triangle.png" />
+=======
+    <Content Include="MedicalCenterAdminsign.aspx" />
+    <Content Include="PasswordResetpage.aspx" />
+    <Content Include="PaswordResetSend.aspx" />
+>>>>>>> b0eb405af4c866b8230aeb3b90a74490d4376b20
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -547,6 +558,27 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Doctorlogin.aspx.cs">
+      <DependentUpon>Doctorlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doctorlogin.aspx.designer.cs">
+      <DependentUpon>Doctorlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorPrescribe.aspx.cs">
+      <DependentUpon>DoctorPrescribe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorPrescribe.aspx.designer.cs">
+      <DependentUpon>DoctorPrescribe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doctorregister.aspx.cs">
+      <DependentUpon>doctorregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doctorregister.aspx.designer.cs">
+      <DependentUpon>doctorregister.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrontPage.aspx.cs">
       <DependentUpon>FrontPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -556,6 +588,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HealthCenterAdminRegister.aspx.cs">
+      <DependentUpon>HealthCenterAdminRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthCenterAdminRegister.aspx.designer.cs">
+      <DependentUpon>HealthCenterAdminRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Health_pack_front.aspx.cs">
       <DependentUpon>Health_pack_front.aspx</DependentUpon>
@@ -584,6 +623,27 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalCenterAdminsign.aspx.cs">
+      <DependentUpon>MedicalCenterAdminsign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicalCenterAdminsign.aspx.designer.cs">
+      <DependentUpon>MedicalCenterAdminsign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordResetpage.aspx.cs">
+      <DependentUpon>PasswordResetpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordResetpage.aspx.designer.cs">
+      <DependentUpon>PasswordResetpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaswordResetSend.aspx.cs">
+      <DependentUpon>PaswordResetSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaswordResetSend.aspx.designer.cs">
+      <DependentUpon>PaswordResetSend.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">

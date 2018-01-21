@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
 using System.Configuration;
+using System.Data.SqlClient;
+
+
 namespace test_Expression_web
 {
-    public partial class Register : System.Web.UI.Page
+    public partial class doctorregister : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,7 +19,7 @@ namespace test_Expression_web
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
                 conn.Open();
 
-                String str = "select count(*) from Patient where PatientID ='" + id.Text + "'";
+                String str = "select count(*) from Consultant where ConsultantRegNo ='" + id.Text + "'";
 
                 SqlCommand com = new SqlCommand(str, conn);
                 int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
@@ -39,7 +41,7 @@ namespace test_Expression_web
             SqlConnection conn1 = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
             conn1.Open();
 
-            String str = "select count(*) from Patient where Email ='" + email.Text + "'";
+            String str = "select count(*) from Consultant where Email ='" + email.Text + "'";
 
             SqlCommand com1 = new SqlCommand(str, conn1);
             int temp = Convert.ToInt32(com1.ExecuteScalar().ToString());
@@ -58,7 +60,7 @@ namespace test_Expression_web
                     SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
                     conn.Open();
 
-                    String insertQ = "insert into Patient(PatientID,Age,Gender,TP,Email,Password,Name) values (@pac_id,@age,@Radio,@tp,@email,@pword,@name)";
+                    String insertQ = "insert into Consultant(ConsultantRegNo,Age,Gender,TP,Email,Password,ConsultantName) values (@pac_id,@age,@Radio,@tp,@email,@pword,@name)";
 
                     SqlCommand com = new SqlCommand(insertQ, conn);
 
@@ -80,7 +82,7 @@ namespace test_Expression_web
 
                 }
 
-                Response.Redirect("Appointment.aspx");
+                Response.Write("<script>alert('You are registerd');</script>");
 
             }
         }
