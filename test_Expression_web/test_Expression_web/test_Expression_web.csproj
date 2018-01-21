@@ -251,6 +251,7 @@
     <Content Include="DocTimeData_files\slick.min.js.download" />
     <Content Include="DocTimeData_files\touch.js.download" />
     <Content Include="DocTimeData_files\web.js.download" />
+    <Content Include="HealthCenterAdminRegister.aspx" />
     <Content Include="Hospital_admin.aspx" />
     <Content Include="hospital_files\985539714849684" />
     <Content Include="hospital_files\analytics.js.download" />
@@ -347,6 +348,7 @@
     <Content Include="js\jquery.easing.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="login.aspx" />
+    <Content Include="MedicalCenterAdminsign.aspx" />
     <Content Include="PasswordResetpage.aspx" />
     <Content Include="PaswordResetSend.aspx" />
     <Content Include="Register.aspx" />
@@ -464,6 +466,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HealthCenterAdminRegister.aspx.cs">
+      <DependentUpon>HealthCenterAdminRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthCenterAdminRegister.aspx.designer.cs">
+      <DependentUpon>HealthCenterAdminRegister.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Health_pack_front.aspx.cs">
       <DependentUpon>Health_pack_front.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -491,6 +500,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalCenterAdminsign.aspx.cs">
+      <DependentUpon>MedicalCenterAdminsign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicalCenterAdminsign.aspx.designer.cs">
+      <DependentUpon>MedicalCenterAdminsign.aspx</DependentUpon>
     </Compile>
     <Compile Include="PasswordResetpage.aspx.cs">
       <DependentUpon>PasswordResetpage.aspx</DependentUpon>

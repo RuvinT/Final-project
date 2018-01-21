@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Doctorlogin.aspx.cs" Inherits="test_Expression_web.Doctorlogin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MedicalCenterAdminsign.aspx.cs" Inherits="test_Expression_web.MedicalCenterAdminsign" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Login Form for doctors</title>
+	<title>Login Form</title>
 
 
 	<link rel="stylesheet" href="css/form-login.css">
@@ -37,7 +37,7 @@
                 <div class="form-white-background">
 
                     <div class="form-title-row">
-                        <h1>Log in doctor</h1>
+                        <h1>Log in</h1>
                     </div>
 
                     <div class="form-row">
@@ -65,8 +65,8 @@
 
                 </div>
 
-              
-                <a href="doctorregister.aspx" class="form-create-an-account" >Create an account &rarr;</a>
+               
+                <a href="HealthCenterAdminRegister.aspx" class="form-create-an-account" >Create an account &rarr;</a>
 
             </div>
 

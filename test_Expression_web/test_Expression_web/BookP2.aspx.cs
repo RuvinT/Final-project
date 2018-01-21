@@ -11,6 +11,7 @@ namespace test_Expression_web
 {
     public partial class BookP2 : System.Web.UI.Page
     {
+        Boolean flag = true;
         protected void Page_Load(object sender, EventArgs e)
         {
             nat.Text=Session["rad"].ToString();
@@ -27,15 +28,19 @@ namespace test_Expression_web
             time.Text = Session["Time"].ToString();
             doctor.Text= Session["doctor"].ToString();
            count.Text= Session["cou"].ToString();
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
-            conn.Open();
 
 
 
+           
+
+
+            SqlConnection connx = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
+
+            connx.Open();
             String insertQ2 = "select RoomNumber from DocSedule where DoctorName='" + Session["doctor"].ToString() + "' AND Date='" + Session["Date"].ToString() + "' AND Hospital='" + Session["hos"].ToString() + "' AND Time='"+ Session["Time"].ToString() + "'";
            
 
-            SqlCommand com2 = new SqlCommand(insertQ2, conn);
+            SqlCommand com2 = new SqlCommand(insertQ2, connx);
            
             room.Text = com2.ExecuteScalar().ToString();
             
@@ -46,7 +51,7 @@ namespace test_Expression_web
 
          
 
-            conn.Close();
+            connx.Close();
 
         }
         
@@ -74,6 +79,28 @@ namespace test_Expression_web
                 com.ExecuteNonQuery();
 
                 conn.Close();
+                string name1 = Session["name"].ToString();
+                string date1 = Session["Date"].ToString();
+                string doctor1 = Session["doctor"].ToString();
+                string nic1 = Session["nic"].ToString();
+                string hos1 = Session["hos"].ToString();
+                string email1 = Session["email"].ToString();
+                
+                SqlConnection connt = new SqlConnection(ConfigurationManager.ConnectionStrings["HealthPackConnectionString"].ConnectionString);
+                connt.Open();
+                String insertQ = "insert into PacientData(PatientName,DateIssued,ConsultantName,PatientID,Hospital,email) values (@pac_name,@date,@doc,@pacid,@hos,@email)";
+
+                SqlCommand comt = new SqlCommand(insertQ, connt);
+
+                comt.Parameters.AddWithValue("@pac_name", name1);
+                comt.Parameters.AddWithValue("@date", date1);
+                comt.Parameters.AddWithValue("@doc", doctor1);
+                comt.Parameters.AddWithValue("@pacid", nic1);
+                comt.Parameters.AddWithValue("@hos", hos1);
+                comt.Parameters.AddWithValue("@email", email1);
+
+                comt.ExecuteNonQuery();
+                connt.Close();
                 Response.Write("<script>alert('Your booking was successful');</script>");
 
             }
