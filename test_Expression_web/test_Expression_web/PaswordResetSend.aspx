@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="test_Expression_web.login" %>
-
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PaswordResetSend.aspx.cs" Inherits="test_Expression_web.PaswordResetSend" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -39,7 +37,15 @@
                 <div class="form-white-background">
 
                     <div class="form-title-row">
-                        <h1>Log in</h1>
+                        <h1>Password Reset form</h1>
+                    </div>
+                     <div class="form-row">
+                       
+                            
+                            <asp:TextBox ID="username" runat="server" placeholder="Your name"></asp:TextBox>
+                      
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="username" Display="Dynamic" ErrorMessage="Please enter email" ForeColor="Red"></asp:RequiredFieldValidator>
+                           
                     </div>
 
                     <div class="form-row">
@@ -52,22 +58,15 @@
                       
                     </div>
 
-                    <div class="form-row">
-                      
-                           
-                            <asp:TextBox ID="checkpassword" runat="server" placeholder="Password"></asp:TextBox>
-                 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="checkpassword" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
-                 
-                    </div>
+                   
 
                     <div class="form-row">
-                       <asp:Button ID="log" runat="server" Text="Log In" BackColor="#0099FF" CssClass="auto-style1" ForeColor="White" Width="266px" OnClick="log_Click" />
+                       <asp:Button ID="log" runat="server" Text="Send Email" BackColor="#0099FF" CssClass="auto-style1" ForeColor="White" Width="266px" OnClick="log_Click" />
                     </div>
 
                 </div>
 
-                <a href="PaswordResetSend.aspx" class="form-forgotten-password">Forgotten password &middot;</a>
+               
                 <a href="Register.aspx" class="form-create-an-account" >Create an account &rarr;</a>
 
             </div>

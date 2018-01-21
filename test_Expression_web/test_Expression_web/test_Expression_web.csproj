@@ -347,6 +347,8 @@
     <Content Include="js\jquery.easing.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="login.aspx" />
+    <Content Include="PasswordResetpage.aspx" />
+    <Content Include="PaswordResetSend.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -489,6 +491,20 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordResetpage.aspx.cs">
+      <DependentUpon>PasswordResetpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordResetpage.aspx.designer.cs">
+      <DependentUpon>PasswordResetpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaswordResetSend.aspx.cs">
+      <DependentUpon>PaswordResetSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaswordResetSend.aspx.designer.cs">
+      <DependentUpon>PaswordResetSend.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
